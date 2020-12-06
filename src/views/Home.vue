@@ -1,32 +1,44 @@
 <template>
-  <div class="columns is-desktop">
-    <div class="column is-4" v-for="(item, index) in personajes" :key="index">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img :src="personajes[index].imagen" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-left">
-              {{personajes[index].id}}
-            </div>
-            <div class="media-content">
-              <p class="title is-4">{{personajes[index].nombre}}</p>
-            </div>
+    <b-carousel>
+        <b-carousel-item v-for="(item, index) in personajes" :key="index">
+            <section :class="`hero is-medium`">
+                <div class="hero-body has-text-centered">
+                  <h1 class="title">{{personajes[index].nombre}}</h1>
+                  <img :src="personajes[index].imagen" alt="Placeholder image">
+                </div>
+            </section>
+        </b-carousel-item>
+    </b-carousel>
+</template>
+  <!-- <div class="container is-max-widescreen is-fluid">
+    <div class="columns is-desktop">
+      <div class="column is-half" v-for="(item, index) in personajes" :key="index">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img :src="personajes[index].imagen" alt="Placeholder image">
+            </figure>
           </div>
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
-            <br>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                {{personajes[index].id}}
+              </div>
+              <div class="media-content">
+                <p class="title is-4">{{personajes[index].nombre}}</p>
+              </div>
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-</template>
+  </div> -->
+
 
 <script>
 // @ is an alias to /src
