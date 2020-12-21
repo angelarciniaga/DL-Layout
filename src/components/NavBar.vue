@@ -2,7 +2,8 @@
     <b-navbar>
         <template slot="start">
             <b-navbar-item href="#">
-                <router-link :to="{name: 'Home'}" class="nav-link">Inicio</router-link>
+                <router-link :to="{name: 'Home'}" class="nav-link">Inicio</router-link> | 
+                <router-link :to="{name: 'Editando'}" class="nav-link">Editar</router-link>
             </b-navbar-item>
         </template>
 
