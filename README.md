@@ -1,5 +1,11 @@
 # dl_layout
 
+## Credenciales para Ingresar
+```
+usuario@user.com
+123456
+```
+
 ## Project setup
 ```
 npm install
